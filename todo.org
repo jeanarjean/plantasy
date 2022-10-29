@@ -1,0 +1,20 @@
+* [ ] PlanPlantasy
+** [ ] Infra
+*** [ ] Github setup
+*** [ ] Fly app setup
+*** [ ] Buy domain
+*** [ ] DNS setup
+** [ ] Software Engineering :)
+*** [X] Phoenix Project scaffold
+*** [ ] TailwindCSS setup for Phoenix
+*** [ ] Create index layout
+*** [ ] Save page content to database
+*** [ ] Drag and drop
+*** [ ] Share feature
+** [ ] Marketing
+*** [X] Make post describing project
+*** [ ] Share app on the fastlane forum
+*** [ ] Share on product hunt
+*** [ ] Share on Betalist
+*** [ ] Share on Twitter
+*** [ ] Add to twitter bio
