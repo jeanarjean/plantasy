@@ -1,12 +1,12 @@
 * [ ] PlanPlantasy
 ** [ ] Infra
-*** [ ] Github setup
-*** [ ] Fly app setup
+*** [X] Github setup
+*** [ ] Fly.io app setup
 *** [ ] Buy domain
 *** [ ] DNS setup
 ** [ ] Software Engineering :)
 *** [X] Phoenix Project scaffold
-*** [ ] TailwindCSS setup for Phoenix
+*** [X] TailwindCSS setup for Phoenix
 *** [ ] Create index layout
 *** [ ] Save page content to database
 *** [ ] Drag and drop

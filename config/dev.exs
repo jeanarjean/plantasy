@@ -25,7 +25,8 @@ config :plantasy, PlantasyWeb.Endpoint,
   secret_key_base: "hX+6pjAY5RgCrStaH071qnXuVRlLxAv78R/KV/JlNYcytx5FrI0HENPyy5evYY9K",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
-    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
+    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
+    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
   ]
 
 # ## SSL Support
