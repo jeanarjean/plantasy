@@ -9,7 +9,7 @@ processes = []
   release_command = "/app/bin/migrate"
 
 [env]
-  PHX_HOST = "plantasy.fly.dev"
+  PHX_HOST = "planyourplantasy.com"
   PORT = "8080"
 
 [experimental]
