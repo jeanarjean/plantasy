@@ -1,0 +1,22 @@
+<h1>Listing Plans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Goals 10 years</th>
+      <th>Goals 5 years</th>
+      <th>Goals 1 year</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody id="plans">
+    <%= for plan <- @plans do %>
+      <tr id={"plan-#{plan.id}"}>
+        <td><%= plan.goals_10_years %></td>
+        <td><%= plan.goals_5_years %></td>
+        <td><%= plan.goals_1_year %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

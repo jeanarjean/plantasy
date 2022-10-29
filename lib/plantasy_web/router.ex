@@ -17,7 +17,7 @@ defmodule PlantasyWeb.Router do
   scope "/", PlantasyWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    live "/", PlanLive.Index, :index
   end
 
   # Other scopes may use custom stacks.
