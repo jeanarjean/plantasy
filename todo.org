@@ -7,10 +7,14 @@
 ** [ ] Software Engineering :)
 *** [X] Phoenix Project scaffold
 *** [X] TailwindCSS setup for Phoenix
-*** [ ] Create index layout
-*** [ ] Save page content to database
-*** [ ] Drag and drop
-*** [ ] Share feature
+*** [X] Create index layout
+*** [X] Let user add goals
+*** [X] Save page content to database
+*** KILL Drag and drop ??? Not necessary
+*** [X] Share feature
+*** [X] Clean UI a little
+*** [X] Add a subheading to the title describing what it is
+*** [X] Add a footer to my twitter and to the fastlane post
 ** [ ] Marketing
 *** [X] Make post describing project
 *** [ ] Share app on the fastlane forum

@@ -98,6 +98,7 @@ defmodule PlantasyWeb do
 
       import PlantasyWeb.ErrorHelpers
       import PlantasyWeb.Gettext
+      import Plantasy.InputHelpers
       alias PlantasyWeb.Router.Helpers, as: Routes
     end
   end

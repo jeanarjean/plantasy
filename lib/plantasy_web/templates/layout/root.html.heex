@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-full" lang="en">
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -9,12 +9,25 @@
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
   </head>
-  <body>
+  <body class="wrapper">
     <header>
     <div class="pt-6 text-center">
-    <h1 class="text-6xl text-gray-700">Plantasy</h1>
+      <h1 class="text-6xl text-gray-700">Plantasy</h1>
     </div>
     </header>
-    <%= @inner_content %>
+    <div>
+      <div class="lg:w-1/2 m-auto">
+        <p class="text-center text-gray-600 text-3xl">
+          Plantasy is a <a href="https://www.thefastlaneforum.com/community/threads/ny-resolutions-no-try-making-a-1-5-10-planasy.102441/">goal-setting technique</a> to help you take the right decisions to get where you want to be.
+        </p>
+      </div>
+      <%= @inner_content %>
+    </div>
+    <footer class="bg-gray-50">
+      <div class="py-2 text-center">
+      1/5/10 Plantasy is a concept by <a href="https://www.thefastlaneforum.com/community/threads/ny-resolutions-no-try-making-a-1-5-10-planasy.102441/">MJ Demarco</a>
+      · Website made by <a href="https://twitter.com/jean_arguin">jeanarjean</a>
+      </div>
+    </footer>
   </body>
 </html>

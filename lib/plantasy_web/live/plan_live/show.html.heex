@@ -1,0 +1,28 @@
+<h1>10 Year Goals</h1>
+  <ul>
+  <%= for goals_10_years <- @plan.goals_10_years do %>
+    <li>
+      <%= goals_10_years %>
+    </li>
+  <% end %>
+  </ul>
+<h1>5 Year Goals</h1>
+  <ul>
+  <%= for goals_5_years <- @plan.goals_5_years do %>
+    <li>
+      <%= goals_5_years %>
+    </li>
+  <% end %>
+  </ul>
+<h1>1 Year Goals</h1>
+  <ul>
+  <%= for goals_1_year <- @plan.goals_1_year do %>
+    <li>
+      <%= goals_1_year %>
+    </li>
+  <% end %>
+  </ul>
+
+<p class="text-center text-gray-600 text-3xl">
+  Create your own plantasy here <%= live_redirect("here", to: Routes.plan_index_path(@socket, :index)) %>
+</p>

@@ -1,22 +1,56 @@
-<h1>Listing Plans</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Goals 10 years</th>
-      <th>Goals 5 years</th>
-      <th>Goals 1 year</th>
-
-      <th></th>
-    </tr>
-  </thead>
-  <tbody id="plans">
-    <%= for plan <- @plans do %>
-      <tr id={"plan-#{plan.id}"}>
-        <td><%= plan.goals_10_years %></td>
-        <td><%= plan.goals_5_years %></td>
-        <td><%= plan.goals_1_year %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<script>
+window.onload = () => {
+  const removeElement = ({target}) => {
+    let el = document.getElementById(target.dataset.id);
+    let li = el.parentNode;
+    li.parentNode.removeChild(li);
+  }
+  Array.from(document.querySelectorAll(".remove-form-field"))
+    .forEach(el => {
+      el.onclick = (e) => {
+        removeElement(e);
+      }
+    });
+  Array.from(document.querySelectorAll(".add-form-field"))
+    .forEach(el => {
+      el.onclick = ({target}) => {
+        let container = document.getElementById(target.dataset.container);
+        let index = container.dataset.index;
+        let newRow = target.dataset.prototype;
+        container.insertAdjacentHTML('beforeend', newRow.replace(/__name__/g, index));
+        container.dataset.index = parseInt(container.dataset.index) + 1;
+        container.querySelectorAll('a.remove-form-field').forEach(el => {
+          el.onclick = (e) => {
+            removeElement(e);
+          }
+        })
+      }
+    });
+}
+</script>
+<.form let={f} for={@changeset} phx-change="validate" phx-submit="save">
+<h1>10 Year Goals</h1>
+  <div id="10-year-goals" phx-update="ignore">
+    <%= array_input f, :goals_10_years %>
+    <%= array_input f, :goals_10_years %>
+    <%= array_input f, :goals_10_years %>
+    <%= array_add_button f, :goals_10_years %>
+  </div>
+<h1>5 Year Goals</h1>
+  <div id="5-year-goals" phx-update="ignore">
+    <%= array_input f, :goals_5_years %>
+    <%= array_input f, :goals_5_years %>
+    <%= array_input f, :goals_5_years %>
+    <%= array_add_button f, :goals_5_years %>
+  </div>
+<h1>1 Year Goals</h1>
+  <div id="1-year-goals" phx-update="ignore">
+    <%= array_input f, :goals_1_year %>
+    <%= array_input f, :goals_1_year %>
+    <%= array_input f, :goals_1_year %>
+    <%= array_add_button f, :goals_1_year %>
+  </div>
+  <div class="text-center mt-5">
+  <%= submit "Share", class: "inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-16 py-8 text-4xl font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-" %>
+  </div>
+</.form>

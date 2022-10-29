@@ -2,6 +2,7 @@ defmodule Plantasy.Strategy.Plan do
   use Ecto.Schema
   import Ecto.Changeset
 
+  @primary_key {:id, Ecto.UUID, autogenerate: true}
   schema "plans" do
     field :goals_10_years, {:array, :string}
     field :goals_1_year, {:array, :string}
