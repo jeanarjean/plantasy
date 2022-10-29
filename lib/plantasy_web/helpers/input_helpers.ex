@@ -40,7 +40,7 @@ defmodule Plantasy.InputHelpers do
       value: k,
       id: new_id,
       class:
-        "block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-xl text-gray-900"
+        "block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-2xl text-black"
     ]
 
     content_tag :div, class: "flex justify-content space-x-4" do

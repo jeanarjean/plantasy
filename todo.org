@@ -1,10 +1,10 @@
 * [ ] PlanPlantasy
 ** [ ] Infra
 *** [X] Github setup
-*** [ ] Fly.io app setup
-*** [ ] Buy domain
+*** [X] Fly.io app setup
+*** [X] Buy domain
 *** [ ] DNS setup
-** [ ] Software Engineering :)
+** [X] Software Engineering :)
 *** [X] Phoenix Project scaffold
 *** [X] TailwindCSS setup for Phoenix
 *** [X] Create index layout
@@ -15,10 +15,13 @@
 *** [X] Clean UI a little
 *** [X] Add a subheading to the title describing what it is
 *** [X] Add a footer to my twitter and to the fastlane post
+*** [ ] Add date created
+*** [ ] Add github repo link
+*** [ ] Add twitter svg
 ** [ ] Marketing
 *** [X] Make post describing project
 *** [ ] Share app on the fastlane forum
 *** [ ] Share on product hunt
 *** [ ] Share on Betalist
-*** [ ] Share on Twitter
-*** [ ] Add to twitter bio
+*** [X] Share on Twitter
+*** [X] Add to twitter bio

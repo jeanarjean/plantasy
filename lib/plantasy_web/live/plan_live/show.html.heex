@@ -24,5 +24,9 @@
   </ul>
 
 <p class="text-center text-gray-600 text-3xl">
-  Create your own plantasy here <%= live_redirect("here", to: Routes.plan_index_path(@socket, :index)) %>
+  Plan created on <%= @plan.inserted_at |> Calendar.strftime("%B %d, %Y") %>
+</p>
+
+<p class="text-center text-gray-600 text-3xl">
+  Create your own plantasy <%= live_redirect("here", to: Routes.plan_index_path(@socket, :index)) %>
 </p>
