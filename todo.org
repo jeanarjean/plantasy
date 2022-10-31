@@ -3,7 +3,7 @@
 *** [X] Github setup
 *** [X] Fly.io app setup
 *** [X] Buy domain
-*** [ ] DNS setup
+*** [X] DNS setup
 ** [X] Software Engineering :)
 *** [X] Phoenix Project scaffold
 *** [X] TailwindCSS setup for Phoenix
@@ -15,8 +15,9 @@
 *** [X] Clean UI a little
 *** [X] Add a subheading to the title describing what it is
 *** [X] Add a footer to my twitter and to the fastlane post
-*** [ ] Add date created
-*** [ ] Add github repo link
+*** [X] Add date created
+*** [X] Add github repo link
+*** [X] PanelBear
 *** [ ] Add twitter svg
 ** [ ] Marketing
 *** [X] Make post describing project

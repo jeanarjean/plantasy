@@ -8,6 +8,11 @@
     <%= live_title_tag assigns[:page_title] || "Plantasy", suffix: " · Plan your dream life" %>
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
+    <script async src="https://cdn.panelbear.com/analytics.js?site=3Vmzs07gnCA"></script>
+    <script>
+        window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
+        panelbear('config', { site: '3Vmzs07gnCA' });
+    </script>
   </head>
   <body class="wrapper">
     <header>
